@@ -1,153 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Momma's Bakery | Inicio</title>
+    <link rel="icon" href="./assets/img/Mommas_bakery_logo.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Momma's Bakery | Página de Inicio</title>
 </head>
 
 <body>
     <section>
-        <header>
-            <img alt="logo" src="" />
-            <div>
-                Entrega gratis en CDMX y zona metropolitana
-            </div>
-            <div>
-                Teléfonos
-                <li>55-1980-2563</li>
-                <li>55-1980-9099</li>
-            </div>
+        <header class="encabezado">
+            <img src="./assets/img/Mommas_bakery_logo.png" alt="logo-pasteleria" />
+            <nav>
+                <ul class="menu">
+                    <li class="selected">Inicio</li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="./views/order.html">Realiza tu pedido</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="./views/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
         </header>
     </section>
 
     <section>
-        <main>
-            <div>
-                <img alt="banner" src="" />
-                <div>
-                    <h1>Pasteles personalizados</h1>
-                    <p>Adapta a tu gusto, con nuestras figuras, adornos y mucho más</p>
-                    <a href="pedido.html"><button>Personaliza tu pastel</button></a>
-                </div>
+        <main class="main">
+            <!-- <img src="./assets/img/background.jpg"/> -->
+            <div class="anouncement">
+                <h1>Arma tu pastel a tu medida</h1>
+                <button>¡Quiero saber como!</button>
             </div>
 
-            <h2>Conoce algunos de nuestros modelos</h2>
             <section>
-                <div>
-                    <article>
-                        <img alt="model" src="" />
-                        <footer>
-                            <p>Pastel de Gokú</p>
-                            <p><b>$1,230 MXN</b></p>
-                        </footer>
-                    </article>
-                    <article>
-                        <img alt="model" src="" />
-                        <footer>
-                            <p>Pastel de Hello Kitty</p>
-                            <p><b>$2,000 MXN</b></p>
-                        </footer>
-                    </article>
-                    <article>
-                        <img alt="model" src="" />
-                        <footer>
-                            <p>Pastel de Scooby Doo</p>
-                            <p><b>$1,500 MXN</b></p>
-                        </footer>
-                    </article>
-                </div>
-
-                <div>
-                    <article>
-                        <img alt="model" src="" />
-                        <footer>
-                            <p>Pastel de Cheems</p>
-                            <p><b>$2,500 MXN</b></p>
-                        </footer>
-                    </article>
-                    <article>
-                        <img alt="model" src="" />
-                        <footer>
-                            <p>Pastel de Spider-Man</p>
-                            <p><b>$3,400 MXN</b></p>
-                        </footer>
-                    </article>
-                    <article>
-                        <img alt="model" src="" />
-                        <footer>
-                            <p>Pastel de The Avengers</p>
-                            <p><b>$3,500 MXN</b></p>
-                        </footer>
-                    </article>
+                <h3>Menú</h3>
+                <div class="menu">
+                    <header class="cake_parts">
+                        <button>Bases</button>
+                        <button>Relleno</button>
+                        <button>Adornos</button>
+                    </header>
+                    <div class="menu_cake_bases">
+                        <ul>
+                            <li>
+                                <span>
+                                    <p>Pan de chocolate</p>
+                                    <a>Ver muestra</a>
+                                    <p>$150.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Pan de naranja</p>
+                                    <a>Ver muestra</a>
+                                    <p>$150.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Pan de plátano</p>
+                                    <a>Ver muestra</a>
+                                    <p>$175.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Pan de menta</p>
+                                    <a>Ver muestra</a>
+                                    <p>$200.00</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu_cake_stuffings">
+                        <ul>
+                            <li>
+                                <span>
+                                    <p>Espuma de nutella</p>
+                                    <p>$150.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Espuma de leche</p>
+                                    <p>$200.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Crema de frutos rojos</p>
+                                    <p>$350.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Milky way</p>
+                                    <p>$250.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Peanut Butter</p>
+                                    <p>$275.00</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="menu_cake_ornaments">
+                        <ul>
+                            <li>
+                                <span>
+                                    <p>Adornos en 3D</p>
+                                    <a>Ver muestra</a>
+                                    <p>$250.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Adornos geométricos</p>
+                                    <a>Ver muestra</a>
+                                    <p>$350.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Adornos florales</p>
+                                    <a>Ver muestra</a>
+                                    <p>$400.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Semidesnudos</p>
+                                    <a>Ver muestra</a>
+                                    <p>$375.00</p>
+                                </span>
+                            </li>
+                            <li>
+                                <span>
+                                    <p>Drip cakes</p>
+                                    <a>Ver muestra</a>
+                                    <p>$450.00</p>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
-            <section>
-                <article>
-                    <h3>¿Quieres un diseño único y especial?</h3>
-                    <p>Podemos hacer cualquier personaje, modelo o idea y lo podemos personalizar como tú quieras para
-                        que tu pastel sea único.</p>
-                        <a href="pedido.html"><button>¡Personaliza tu pastel!</button></a>
-                </article>
-                <img alt="baker" src="" />
-            </section>
+            <section class="about_us">
+                <h3>Nosotros</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi dignissimos natus eos perspiciatis
+                    nihil veniam molestiae libero numquam hic dolorum? Quibusdam cum distinctio adipisci excepturi illo
+                    debitis quo exercitationem explicabo!
+                    Eligendi sed laborum minus voluptatum, inventore eos minima temporibus error doloremque, doloribus
+                    vitae, amet earum veniam itaque! Vitae aperiam temporibus aspernatur, facilis iste dicta pariatur,
+                    eos sit a possimus repellendus?
+                </p>
+                <img src="./assets/img/about.jpg" />
 
-            <section>
-                <div>
-                    <img src="" />
-                    <p><b>Hacemos cualquier idea</b></p>
-                    <p>No importa el modelo, el personaje o el tema. Si te lo puedes imaginar, lo podemos realizar.</p>
-                </div>
-                <div>
-                    <img src="" />
-                    <p><b>Servicio al cliente</b></p>
-                    <p>Ya sea por teléfono, Whatsapp, correo o por redes sociales, estamos listos para atenderte.</p>
-                </div>
-                <div>
-                    <img src="" />
-                    <p><b>Compra segura</b></p>
-                    <p>Contamos con certificado de 128-bit SSL y encriptación avanzada, lo que te garantiza seguridad y
-                        tranquilidad en tus compras.</p>
-                </div>
-            </section>
+                <section class="service_time">
+                    <h4>Horario de servicio</h4>
+                    <ul class="hours">
+                        <li>Lunes y domingos (cerrado)</li>
+                        <li>Martes 10:00 - 21:00</li>
+                        <li>Miércoles 10:00 - 21:00</li>
+                        <li>Jueves 10:00 - 21:00</li>
+                        <li>Viernes 9:00 - 22:00</li>
+                        <li>Sábado 8:00 - 22:00</li>
+                    </ul>
+                </section>
 
-            <section>
-                <h3>Opiniones de los clientes</h3>
-                <p><i><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat aliquam enim et consectetur sapiente voluptatibus maxime iste fugiat nam sit alias est officia nemo ratione expedita, accusantium corrupti. Veniam, placeat.
-                Officiis tenetur, minima molestias voluptatem pariatur magni ut aliquam blanditiis nisi eos recusandae aliquid dignissimos nam placeat atque quasi ad doloremque sapiente eligendi praesentium inventore deleniti voluptas quas. Quam!</q></i></p>
+                <section class="contact" id="contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>
+                            <p>Dirección:</p>
+                            <span>
+                                <i class="fa-solid fa-paper-plane"></i> 
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Placeat id obcaecati beatae amet cupiditate deleniti aliquam
+                                    laudantium. Sit, qui quisquam! Est soluta nisi voluptatum hic repellat necessitatibus
+                                    facilis voluptatibus labore!
+                                </p>
+                            </span>
+                        </li>
+                    </ul>
+                    <img src="./assets/img/map.jpg"/>
+                    <a href="./views/order.html"><button>¡Quiero un pastel!</button></a>
+                </section>
             </section>
         </main>
     </section>
 
     <section>
         <footer>
-            <div>
-                <p><b>Contacto</b></p>
-                <P>55-3456-7890</P>
-                <P>55-1091-1000</P>
-            </div>
-
-            <div>
-                <p><b>Whatsapp</b></p>
-                <P>55-3456-7890</P>
-            </div>
-
-            <div>
-                <p><b>Dirección</b></p>
-                <P>Av. San Jerónimo #82 Col. La Otra Banda Coyoacán, CDMX, 01000</P>
-            </div>
-
-            <div>
-                <p><b>Horario de atención:</b></p>
-                <p>Lunes - Sábado 10 am - 6pm</p>
-                <p>Domingo 10 am - 2pm</p>
-            </div>
+            <p>Mama's Bakery, 2022. Todos los derechos reservados.</p>
         </footer>
     </section>
 
+    <script src="https://kit.fontawesome.com/7f3d479cce.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

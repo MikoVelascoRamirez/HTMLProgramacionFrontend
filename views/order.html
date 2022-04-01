@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/Mommas_bakery_logo.png">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Momma's Bakery | Realiza tu pedido</title>
+</head>
+
+<body>
+    <section>
+        <header class="encabezado">
+            <img src="../assets/img/Mommas_bakery_logo.png" alt="logo-pasteleria" />
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Menú</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li class="selected">Realiza tu pedido</li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+            <a href="./views/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+        </header>
+    </section>
+
+    <section>
+        <main>
+            <h1>Realiza tu pedido</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, dolores. Beatae, maiores?
+                Blanditiis perferendis incidunt veritatis inventore officia? Facere dignissimos sapiente explicabo
+                dolore minus maiores repudiandae vel, similique voluptatibus saepe.
+            </p>
+
+            <form class="pedido">
+                <div class="making_cake">
+                    <p class="accordion_1">Define tu pastel</p><hr/>
+
+                    <label for="num_persons">Tamaño del pastel (max. 100 personas)</label>
+                    <input type="range" name="num_persons" id="num_perons" min="5" max="100" list="ranges">
+
+                    <datalist id="ranges">
+                        <option value="5" label="5" />
+                        <option value="100" label="100" />
+                    </datalist>
+
+                    <label for="description">Descripción del pastel</label><hr/>
+                    <textarea id="description"></textarea>
+
+                    <p>Sabores</p><hr/>
+
+                    <label for="bread">Pan</label>
+                    <select name="name" id="name">
+                        <option selected disabled>Selecciona el sabor del pan</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="naranja">Naranja</option>
+                        <option value="platano">Plátano</option>
+                        <option value="menta">Menta</option>
+                    </select>
+
+                    <label for="stuffings">Relleno</label>
+                    <div class="stuffings">
+                        <input type="radio" name="radio1"><label for="radio1">Espuma de Nutella</label>
+                        <input type="radio" name="radio2"><label for="radio2">Espuma de Leche</label>
+                        <input type="radio" name="radio3"><label for="radio3">Crema de frutos rojos</label>
+                        <input type="radio" name="radio4"><label for="radio4">Crema de cacahuate</label>
+                        <input type="radio" name="radio5"><label for="radio5">Milky Way</label>
+                    </div>
+
+                    <label for="decorations">Decoración</label>
+                    <div class="decorations">
+                        <input type="checkbox" name="check1"><label for="check1">Adornos 3D</label>
+                        <input type="checkbox" name="check2"><label for="check2">Adornos geométricos</label>
+                        <input type="checkbox" name="check3"><label for="check3">Adornos florales</label>
+                        <input type="checkbox" name="check4"><label for="check4">Semidesnudos o naked</label>
+                        <input type="checkbox" name="check5"><label for="check5">Drip cakes</label>
+                    </div>
+
+                    <label for="color_decoration">Color: </label> 
+                    <input type="color" name="color_decoration" value="#000">
+                </div>
+                <div class="contact_data">
+                    <input type="text" name="inp_name" placeholder="Nombre del cliente">
+                    <input type="number" name="inp_phone" placeholder="Número de teléfono">
+                    <input type="email" name="inp_email" placeholder="Correo electrónico">
+                    <input type="checkbox" name="delivery"><label for="delivery">¿Entrega a domicilio?</label>
+
+                    <input type="text" name="inp_street" placeholder="Calle">
+                    <input type="text" name="inp_number" placeholder="Número">
+                    <input type="text" name="inp_city" placeholder="Colonia">
+                    <input type="text" name="inp_ref" placeholder="Referencias">
+                </div>
+                <div class="date_delivery">
+                    <p><b>Número de pedido: </b> 1092812</p>
+                    <input type="date" name="inp_date">
+                    <input type="time" name="inp_time">
+                    <div>
+                        <p>¿Urgente?</p>
+                        <input type="radio" name="yes"><label for="yes">Si</label>
+                        <input type="radio" name="no"><label for="no">No</label>
+                    </div>
+
+                    <span>Total: <b>$800.00</b></span>                    
+                </div>
+                <input type="submit" value="Finalizar pedido" id="btn_make_order">
+            </form>
+        </main>
+    </section>
+
+    <section>
+        <footer>
+            <p>Mama's Bakery, 2022. Todos los derechos reservados.</p>
+        </footer>
+    </section>
+
+    <script src="https://kit.fontawesome.com/7f3d479cce.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
