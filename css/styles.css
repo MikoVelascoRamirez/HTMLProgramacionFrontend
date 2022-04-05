@@ -88,16 +88,99 @@ main > .anouncement > h1{
 #menu_card > .menu{
     width: 70%;
     border: 1px solid black;
+    margin-top: 10px;
 }
 
-#menu_card > .menu > .cake_parts{
-    display: flex;
-}
+#menu_card > .menu > .cake_parts{display: flex}
 
 #menu_card > .menu > .cake_parts > li{
-    background: tomato;
     list-style: none;
     padding-block: 30px;
     width: 33.33%;
     text-align: center;
+}
+
+#menu_card > .menu > .cake_parts > li{ 
+    border: 1px solid black;
+    font-size: 25px;
+}
+
+.list > ul > li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 35px;
+    padding-inline: 15px;
+    padding-block: 20px;
+    text-align: center;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.list > ul > li > a{
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* Acerca de */
+#about_us{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+#menu_card{background: #bdc3c7}
+
+#about_us > h2{ text-align: center}
+
+#about_us > p{
+    width: 1000px;
+    text-align: center;
+    margin-block: 15px;
+}
+
+#about_us > #service_time{
+    width: 500px;
+    margin-top: 15px;
+}
+
+
+#about_us > #service_time > #hours{
+    list-style: none;
+    margin-top: 10px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+/* Contacto */
+#contact{ 
+    margin-top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items : center;    
+}
+
+
+#contact > h2{text-align: center}
+
+#contact > ul{
+    list-style: none;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    height: 80px;    
+    margin-top: 35px;    
+}
+
+#contact > img{width: 100%}
+
+#contact > a{margin-top: 35px}
+
+/* Footer */
+#footer{ 
+    text-align: center;
+    padding: 15px;
 }
