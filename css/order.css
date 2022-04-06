@@ -1,0 +1,128 @@
+/* Main content */
+
+#content{
+    padding: 30px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#content > *{ margin-bottom: 15px; }
+
+#content > #description{ 
+    text-align: center;
+    max-width: 70%;    
+}
+
+#content > #pedido{    
+    border-inline: 2px solid black;  
+    border-bottom: 2px solid black;
+    width: 75%;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+#content > #pedido > div:not(#contact_data){
+    display: flex;
+    flex-direction: column;        
+    width: 100%;    
+    padding-bottom: 15px;
+}
+
+.accordion_Header{
+    padding: 10px 5px;    
+    border-block: 2px solid black;
+    font-size: 20px;    
+}
+
+#content > #pedido > div > label{
+    /* margin: 10px 10px; */
+    padding-block: 10px;
+    width: 500px;
+    border-bottom: 1px solid black;
+}
+
+#content > #pedido > div > #labels{
+    display: flex;
+    justify-content: space-between;
+}
+
+#content > #pedido > #making_cake > *:not(.accordion_Header){    
+    width: 500px;
+    margin-inline: 10px;
+    margin-top: 10px;
+}
+
+
+#content > #pedido > div > #description{
+    max-height: 150px;
+    resize: none;    
+}
+
+/* Cake parts */
+#bread{
+    display: flex;
+    flex-direction: column;
+}
+
+#bread > #name{ margin-top: 10px}
+
+#content > #pedido > #making_cake > #cake-parts{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#content > #pedido > #making_cake > #cake-parts > div > div{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 150px;
+}
+
+#color{ 
+    display: inline-block;
+    margin-top: 15px; 
+}
+
+/* Contact data */
+#contact_data{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#pedido > #contact_data > .filled{ grid-column: 1/4 }
+
+#pedido > #contact_data > span{ margin-inline: auto; }
+
+#pedido > #contact_data > input[type="email"]{ grid-column: 2/4 }
+
+#pedido > #contact_data > textarea{ resize: none; }
+
+/* Date delivery */
+#date_delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    height: 150px;
+}
+
+#date_delivery > div{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+/* Input button */
+#pedido > #btn_make_order{
+    display: block;
+    margin: 0 auto;
+}

@@ -5,103 +5,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/img/Mommas_bakery_logo.png">
+    <link rel="icon" href="../assets/img/Mommas_bakery_logo.png">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/order.css">
     <title>Momma's Bakery | Realiza tu pedido</title>
 </head>
 
 <body>
-    <section>
+    <section id="header">
         <header class="encabezado">
-            <a href="index.html"><img src="../assets/img/Mommas_bakery_logo.png" alt="logo-pasteleria" /></a>            
+            <a href="../index.html"><img src="../assets/img/Mommas_bakery_logo.png" alt="logo-pasteleria" /></a>            
             <nav>
                 <ul class="menu">
-                    <li><a href="">Menú</a></li>
+                    <li><a href="../index.html">Menú</a></li>
                     <li><a href="">Nosotros</a></li>
                     <li class="selected">Realiza tu pedido</li>
                     <li><a href="">Contacto</a></li>
                 </ul>
             </nav>
-            <a href="./views/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+            <a href="login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
         </header>
     </section>
 
     <section>
-        <main>
+        <main id="content">
             <h1>Realiza tu pedido</h1>
-            <p>
+            <p id="description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, dolores. Beatae, maiores?
                 Blanditiis perferendis incidunt veritatis inventore officia? Facere dignissimos sapiente explicabo
                 dolore minus maiores repudiandae vel, similique voluptatibus saepe.
             </p>
 
-            <form class="pedido">
-                <div class="making_cake">
-                    <p class="accordion_1">Define tu pastel</p><hr/>
+            <form id="pedido">
+                <p class="accordion_Header">Define tu pastel</p>
+                <div id="making_cake">
 
                     <label for="num_persons">Tamaño del pastel (max. 100 personas)</label>
-                    <input type="range" name="num_persons" id="num_perons" min="5" max="100" list="ranges">
+                    <input type="range" name="num_persons" id="num_perons" min="5" max="100" list="ranges" step="5">
+                    <div id="labels">
+                        <label for="">5</label>
+                        <label for="">10</label>
+                        <label for="">20</label>
+                        <label for="">30</label>
+                        <label for="">40</label>
+                        <label for="">50</label>
+                        <label for="">60</label>
+                        <label for="">70</label>
+                        <label for="">80</label>
+                        <label for="">90</label>
+                        <label for="">100</label>
+                    </div>
 
                     <datalist id="ranges">
                         <option value="5" label="5" />
+                        <option value="10" label="10" />
+                        <option value="20" label="20" />
+                        <option value="30" label="30" />
+                        <option value="40" label="40" />
+                        <option value="50" label="50" />
+                        <option value="60" label="60" />
+                        <option value="70" label="70" />
+                        <option value="80" label="80" />
+                        <option value="90" label="90" />
                         <option value="100" label="100" />
                     </datalist>
 
-                    <label for="description">Descripción del pastel</label><hr/>
+                    <label for="description">Descripción del pastel</label>
                     <textarea id="description"></textarea>
 
-                    <p>Sabores</p><hr/>
+                    <label for="name">Sabores</label>
 
-                    <label for="bread">Pan</label>
-                    <select name="name" id="name">
-                        <option selected disabled>Selecciona el sabor del pan</option>
-                        <option value="chocolate">Chocolate</option>
-                        <option value="naranja">Naranja</option>
-                        <option value="platano">Plátano</option>
-                        <option value="menta">Menta</option>
-                    </select>
+                    <section id="cake-parts">
+                        <div id="bread">
+                            <label for="bread">Pan</label>
+                            <select name="name" id="name">
+                                <option selected disabled>Selecciona el sabor del pan</option>
+                                <option value="chocolate">Chocolate</option>
+                                <option value="naranja">Naranja</option>
+                                <option value="platano">Plátano</option>
+                                <option value="menta">Menta</option>
+                            </select>
+                        </div>
+                        <div id="stuffings">
+                            <label for="stuffings">Relleno</label>
+                            <div id="radio_stuffings">
+                                <span>
+                                    <input type="radio" name="radio1">
+                                    <label for="radio1">Espuma de Nutella</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="radio2">
+                                    <label for="radio2">Espuma de Leche</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="radio3">
+                                    <label for="radio3">Crema de frutos rojos</label>
+                                </span>                                
+                                <span>
+                                    <input type="radio" name="radio4">
+                                    <label for="radio4">Crema de cacahuate</label>
+                                </span>
+                                <span>
+                                    <input type="radio" name="radio5">
+                                    <label for="radio5">Milky Way</label>
+                                </span>                                
+                            </div>
+                        </div>                        
+                        <div id="decorations">
+                            <label for="decorations">Decoración</label>
+                            <div id="checks_decorations">
+                                <span>
+                                    <input type="checkbox" name="check1">
+                                    <label for="check1">Adornos 3D</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check2">
+                                    <label for="check2">Adornos geométricos</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check3">
+                                    <label for="check3">Adornos florales</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check4">
+                                    <label for="check4">Semidesnudos o naked</label>
+                                </span>
+                                <span>
+                                    <input type="checkbox" name="check5">
+                                    <label for="check5">Drip cakes</label>
+                                </span>
+                            </div>
+                            <span id="color">
+                                <label for="color_decoration">Color: </label> 
+                                <input type="color" name="color_decoration" value="#000">
+                            </span>
+                        </div>                        
+                    </section>
 
-                    <label for="stuffings">Relleno</label>
-                    <div class="stuffings">
-                        <input type="radio" name="radio1"><label for="radio1">Espuma de Nutella</label>
-                        <input type="radio" name="radio2"><label for="radio2">Espuma de Leche</label>
-                        <input type="radio" name="radio3"><label for="radio3">Crema de frutos rojos</label>
-                        <input type="radio" name="radio4"><label for="radio4">Crema de cacahuate</label>
-                        <input type="radio" name="radio5"><label for="radio5">Milky Way</label>
-                    </div>
-
-                    <label for="decorations">Decoración</label>
-                    <div class="decorations">
-                        <input type="checkbox" name="check1"><label for="check1">Adornos 3D</label>
-                        <input type="checkbox" name="check2"><label for="check2">Adornos geométricos</label>
-                        <input type="checkbox" name="check3"><label for="check3">Adornos florales</label>
-                        <input type="checkbox" name="check4"><label for="check4">Semidesnudos o naked</label>
-                        <input type="checkbox" name="check5"><label for="check5">Drip cakes</label>
-                    </div>
-
-                    <label for="color_decoration">Color: </label> 
-                    <input type="color" name="color_decoration" value="#000">
                 </div>
-                <div class="contact_data">
-                    <input type="text" name="inp_name" placeholder="Nombre del cliente">
+
+                <p class="accordion_Header">Datos de contacto</p>
+                <div id="contact_data">
+                    <input type="text" name="inp_name" class="filled" placeholder="Nombre del cliente">
                     <input type="number" name="inp_phone" placeholder="Número de teléfono">
                     <input type="email" name="inp_email" placeholder="Correo electrónico">
-                    <input type="checkbox" name="delivery"><label for="delivery">¿Entrega a domicilio?</label>
+
+                    <span class="filled">
+                        <input type="checkbox" name="delivery">
+                        <label for="delivery">¿Entrega a domicilio?</label>
+                    </span>
 
                     <input type="text" name="inp_street" placeholder="Calle">
                     <input type="text" name="inp_number" placeholder="Número">
                     <input type="text" name="inp_city" placeholder="Colonia">
-                    <input type="text" name="inp_ref" placeholder="Referencias">
+                    <textarea class="filled" type="text" name="inp_ref" placeholder="Referencias"></textarea>
                 </div>
-                <div class="date_delivery">
+
+                <p class="accordion_Header">Fecha de contacto</p>
+                <div id="date_delivery">
                     <p><b>Número de pedido: </b> 1092812</p>
-                    <input type="date" name="inp_date">
-                    <input type="time" name="inp_time">
                     <div>
-                        <p>¿Urgente?</p>
-                        <input type="radio" name="yes"><label for="yes">Si</label>
-                        <input type="radio" name="no"><label for="no">No</label>
+                        <input type="date" name="inp_date">
+                        <input type="time" name="inp_time">
+                        <div id="controls">
+                            <p>¿Urgente?</p>
+                            <input type="radio" name="yes"><label for="yes">Si</label>
+                            <input type="radio" name="no"><label for="no">No</label>
+                        </div>
                     </div>
 
                     <span>Total: <b>$800.00</b></span>                    
@@ -111,7 +181,7 @@
         </main>
     </section>
 
-    <section>
+    <section id="footer">
         <footer>
             <p>Mama's Bakery, 2022. Todos los derechos reservados.</p>
         </footer>

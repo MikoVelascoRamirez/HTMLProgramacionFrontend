@@ -1,0 +1,14 @@
+#login_form{
+    display: flex;
+    flex-direction: column;
+    margin: 200px auto;
+    width: 400px;
+    height: 200px;
+}
+
+#login_form > h1{ 
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#login_form > input{ margin-block: 10px;}

@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/img/Mommas_bakery_logo.png">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/login.css">
     <title>Momma's Bakery | Inicia sesión</title>
 </head>
 <body>
-    <section>
+    <section id="header">
         <header class="encabezado">
-            <img src="../assets/img/Mommas_bakery_logo.png" alt="logo-pasteleria" />
+            <a href="../index.html"><img src="../assets/img/Mommas_bakery_logo.png" alt="logo-pasteleria" /></a>            
             <nav>
                 <ul class="menu">
-                    <li><a href="">Menú</a></li>
+                    <li><a href="../index.html">Menú</a></li>
                     <li><a href="">Nosotros</a></li>
                     <li><a href="">Contacto</a></li>
+                    <li><a href="../views/order.html">Realiza tu pedido</a></li>
+                    <li class="selected">Iniciar sesión</li>
                 </ul>
             </nav>
             <a href="./views/login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
@@ -25,8 +28,8 @@
 
     <section>
         <main>
-            <form action="baker_View.html">
-                <h1>Login</h1>
+            <form action="baker_View.html" id="login_form">
+                <h1>Inicio de sesión</h1>
                 <input type="text" name="inp_user" placeholder="Nombre de usuario">
                 <input type="password" name="inp_pass" placeholder="Contraseña">
                 <input type="submit" value="Iniciar sesión">
@@ -34,7 +37,7 @@
         </main>
     </section>
 
-    <section>
+    <section id="footer">
         <footer>
             <p>Mama's Bakery, 2022. Todos los derechos reservados.</p>
         </footer>
