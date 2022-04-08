@@ -79,10 +79,12 @@
 
 .row{
     border-bottom: 1px solid black;
-    text-align: left;        
+    text-align: left;            
 }
 
-.row > * { padding-block: 10px }
+.row > * { padding-block: 10px; }
+
+.row > td > a{ color: black; text-decoration: none; }
 
 /* Supplies */
 #supplies{    
