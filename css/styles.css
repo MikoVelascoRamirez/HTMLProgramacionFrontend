@@ -33,6 +33,7 @@
 
 .encabezado > nav > .menu{
     display: flex;
+    width: fit-content;
 }
 
 .selected{ font-weight: 600;}
