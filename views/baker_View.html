@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -14,232 +14,173 @@
 <body>
 
     <section>
-        <header>
+        <header id="header">
             <img src="../assets/img/Mommas_bakery_logo_horizontal.png" width="200" height="86" />
-            <span class="bread-crumb">
-                <a href="">Pedidos</a>
+            <span id="bread-crumb">
+                <a>Pedidos</a>
                 <i class="fa-solid fa-angle-right"></i>
-                <a href="">Pendientes</a>
+                <a class="selected">Pendientes</a>
             </span>
         </header>
     </section>
 
     <section>
-        <main>
+        <main id="main_content">
             <nav>
-                <ul class="orders-menu">
-                    <li><i class="fa-solid fa-rectangle-list"></i> Pedidos</li>
-                    <li>Pendientes</li>
-                    <li>En proceso</li>
-                    <li>Por entregar</li>
-                    <li>Entregados</li>
+                <ul id="orders_menu">
+                    <li id="title"><i class="fa-solid fa-rectangle-list"></i> Pedidos</li>
+                    <li class="selected">Pendientes</li>
+                    <li><a href="baker_View_ordersProcessed.html">En proceso</</a> </li> <li><a
+                                href="baker_View_ordersPending.html">Por entregar</a></li>
+                    <li><a href="baker_View_ordersDelivered.html">Entregados</a>
+                    <li>
                 </ul>
 
-                <ul>
+                <ul id="admin_menu">
                     <li><i class="fa-solid fa-cake-candles"></i>Insumos</li>
                     <li><i class="fa-solid fa-people-group"></i>Personal</li>
                     <li><i class="fa-solid fa-user"></i>Cuenta</li>
-                    <li><i class="fa-solid fa-arrow-right-from-bracket"></i>Cerrar sesiòn</li>
+                    <li><i class="fa-solid fa-arrow-right-from-bracket"></i><a href="login.html">Cerrar sesión</a></li>
                 </ul>
             </nav>
 
-            <section>
+            <section id="dashboard">
 
                 <table id="orders">
-                    <tr>
-                        <th># Pedido - Nombre <button><i class="fa-solid fa-caret-up"></i></button></th>
-                        <th># Personas</th>
-                        <th>¿Pedidos a domicilio?</th>
-                        <th>Detalles pedido</th>
-                        <th>Total</th>
-                    </tr>
-                    <tr>
-                        <td>1092812 - Giacomo Guilizzoni</td>
-                        <td>20</td>
-                        <td><input type="checkbox" name="checked" id=""></td>
-                        <td><a>Ver pedido</a></td>
-                        <td><b>$800.00</b></td>
-                    </tr>
-                    <tr>
-                        <td>1102354 - Marco Botton</td>
-                        <td>10</td>
-                        <td><input type="checkbox" name="checked" id=""></td>
-                        <td><a>Ver pedido</a></td>
-                        <td><b>$700.00</b></td>
-                    </tr>
-                    <tr>
-                        <td>1209876 - Mariah Maclachlan</td>
-                        <td>15</td>
-                        <td><input type="checkbox" name="checked" id=""></td>
-                        <td><a>Ver pedido</a></td>
-                        <td><b>$700.00</b></td>
-                    </tr>
-                    <tr>
-                        <td>1345092 - Valerie Liberty</td>
-                        <td>30</td>
-                        <td><input type="checkbox" name="checked" id=""></td>
-                        <td><a>Ver pedido</a></td>
-                        <td><b>$1200.00</b></td>
-                    </tr>
+                    <thead>
+                        <tr class="row">
+                            <th># Pedido - Nombre <button><i class="fa-solid fa-caret-up"></i></button></th>
+                            <th># Personas</th>
+                            <th>¿Pedidos a domicilio?</th>
+                            <th>Detalles pedido</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr class="row">
+                            <td>1092812 - Giacomo Guilizzoni</td>
+                            <td>20</td>
+                            <td><input type="checkbox" name="checked" id=""></td>
+                            <td><a href="orderDetail.html">Ver pedido</a></td>
+                            <td><b>$800.00</b></td>
+                        </tr>
+                        <tr class="row">
+                            <td>1102354 - Marco Botton</td>
+                            <td>10</td>
+                            <td><input type="checkbox" name="checked" id=""></td>
+                            <td><a>Ver pedido</a></td>
+                            <td><b>$700.00</b></td>
+                        </tr>
+                        <tr class="row">
+                            <td>1209876 - Mariah Maclachlan</td>
+                            <td>15</td>
+                            <td><input type="checkbox" name="checked" id=""></td>
+                            <td><a>Ver pedido</a></td>
+                            <td><b>$700.00</b></td>
+                        </tr>
+                        <tr class="row">
+                            <td>1345092 - Valerie Liberty</td>
+                            <td>30</td>
+                            <td><input type="checkbox" name="checked" id=""></td>
+                            <td><a>Ver pedido</a></td>
+                            <td><b>$1200.00</b></td>
+                        </tr>
+                    </tbody>
                 </table>
 
-                <div class="supplies">
-                    <h3>Insumos (medidas en porciones)</h3>
+                <h3>Insumos (medidas en porciones)</h3>
+                <div id="supplies">
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Chocolate</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Naranja</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Menta</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Plátano</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Espuma de Nutella</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Espuma de leche</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Crema de frutos rojos</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Crema de cacahuate</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Milky way</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Adornos 3D</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Adornos geométricos</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Adornos florales</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Naked</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
 
-                    <div>
+                    <div class="supply">
                         <i class="fa-solid fa-cookie"></i>
+                        <input type="number" id="inp_quantity" min="0" max="200" value="200">
                         <small>Drip cakes</small>
-                        <input type="number" id="inp_quantity" min="0" max="200">
                     </div>
                 </div>
             </section>
-
-            <div class="order">
-                <section>
-                    <i class="fa-solid fa-cake-candles"></i>
-                    <div>
-                        <p>Pedido #1092812</p>
-                        <small>Giacomo Guilizzani</small>
-                        <b>Tel: </b><span>55 1209 4500</span>
-                        <b>Email: </b><a>useremail@correo.com</a>
-                    </div>
-                </section>
-                <section>
-                    <i class="fa-solid fa-circle-info"></i>
-                    <div>
-                        <p>Detalles del producto</p>
-                        <small>Para 20 personas</small>
-                        <p>Descripción</p>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quia illum aspernatur,
-                            consectetur ratione porro iure aperiam ullam cumque earum molestias quos id alias quam, vel
-                            blanditiis unde rem cupiditate?
-                        </p>
-                        <p>Características</p>
-                        <div>
-                            <p>Sabor del pan: <span>chocolate</span></p>
-                            <p>Relleno: <span>espuma de Nutella</span></p>
-                            <p>Decoración: <span>Adornos 3D</span> <span>Color: <div id="color_decoration"></div></span>
-                            </p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Entrega</p>
-
-                    <p>Dirección</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facilis quaerat autem libero dolore
-                        fugiat eaque mollitia provident ea molestiae corporis corrupti sequi distinctio, natus esse
-                        similique consequatur adipisci. Velit?
-                    </p>
-
-                    <p>Referencias</p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero facilis quaerat autem libero dolore
-                        fugiat eaque mollitia provident ea molestiae corporis corrupti sequi distinctio, natus esse
-                        similique consequatur adipisci. Velit?
-                    </p>
-                    <section class="order-date">
-                        <div>
-                            <p>Fecha de entrega</p>
-                            <p>30/04/2022</p>
-                        </div>
-                        <div>
-                            <p>Hora</p>
-                            <p>17:30</p>
-                        </div>
-                    </section>
-
-                    <p>Total: <span id="total">$700.00</span></p>
-                </section>
-
-                <button>Procesar pedido</button>
-            </div>
-
         </main>
 
         <section>
-            <footer>
+            <footer id="footer">
                 <p>Mama's Bakery, 2022. Todos los derechos reservados.</p>
             </footer>
         </section>

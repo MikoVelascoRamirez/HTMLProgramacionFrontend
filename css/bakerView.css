@@ -1,0 +1,183 @@
+/* Header */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+}
+
+#header > img{
+    width: 23%;
+    height: 125px;
+}
+
+#header > #bread-crumb{
+    width: fit-content;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+#header > #bread-crumb > i{
+    font-size: 25px;
+}
+
+.selected{ 
+    font-weight: 600;
+}
+
+/* Main content */
+#main_content{
+    display: flex;
+}
+
+#main_content > nav{
+    width: 23%;
+    padding-left: 10px;
+}
+
+#orders_menu{ border: 1px solid black }
+
+#orders_menu, #admin_menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 160px;
+    padding: 10px 35px;
+    list-style: none;
+    margin-top: 20px;
+}
+
+#orders_menu > #title{ font-size: 25px }
+
+#orders_menu > li > a, #admin_menu > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+#admin_menu > li > i{
+    margin-right: 10px;
+}
+
+/* Orders */
+#dashboard{
+    width: 77%;
+}
+
+#dashboard > #orders{
+    width: 100%;
+    margin-block: 15px;
+    border-collapse: collapse;
+}
+
+.row{
+    border-bottom: 1px solid black;
+    text-align: left;        
+}
+
+.row > * { padding-block: 10px }
+
+/* Supplies */
+#supplies{    
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 15px;
+}
+
+#supplies > .supply{
+    display: flex;
+    flex-wrap: wrap;
+    width: 130px;
+    height: 60px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+#supplies > .supply > i{
+    font-size: 40px;
+}
+
+#suplies > .empty > small{
+    font-size: 20px;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+}
+
+#supplies > .supply > input{
+    margin-left: 20px;
+    width: 60px;
+    height: 40px;
+}
+/* Footer */
+
+#footer{
+    text-align: center;
+    padding: 15px;
+}
+
+
+
+/* Order details */
+#container{
+    border: 1px solid black;
+    width: 40%;
+    margin: 30px auto;
+    padding: 15px;
+}
+
+#container > section{
+    display: flex;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+#container > section:last-child{
+    border: none;
+}
+
+#container > section > i{
+    font-size: 30px;
+}
+
+#container > section > .data_order_details{
+    padding-bottom: 10px;
+    padding-inline: 20px;
+}
+
+.subtitle{
+    margin-block: 10px; 
+    font-weight: 600;
+}
+
+#container > section > .data_order_details > #features{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+}
+
+#container > section > .data_order_details > #date_details{
+    display: flex;
+    margin-top: 10px;
+}
+
+#container > section > .data_order_details > #date_details > div:last-child{ margin-left: 20px}
+
+#total_payment{
+    margin-left: auto;
+    text-align: right;
+}
+
+#total_payment > #price{ color: red}
+
+#proccess_order{
+    width: 100%;
+}
